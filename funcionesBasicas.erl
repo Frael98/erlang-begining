@@ -3,7 +3,7 @@
 
 
 start() -> 
-    Nombre = io:get_line("Funciones Erlang, por favor digite su nombre: "),
+    Nombre = io:get_line("Funciones en Erlang, por favor digite su nombre: "),
     loop(Nombre).
     
 loop(Nombre) ->
@@ -45,12 +45,12 @@ loop(Nombre) ->
                 io:format("Resultado: ~s \n",[invertirString(String)]),
                 loop(Nombre);
             5 -> 
-                io:format("Cadena Minusculas : \n",[]),
+                io:format("Cadena a Minusculas : \n",[]),
                 String = io:get_line("Texto: "),
                 io:format("Resultado: ~s \n",[aMinusculas(String)]),
                 loop(Nombre);
             6 -> 
-                io:format("Cadena Mayusculas : \n",[]),
+                io:format("Cadena a Mayusculas : \n",[]),
                 String = io:get_line("Texto: "),
                 io:format("Resultado: ~w \n",[aMayusculas(String)]),
                 loop(Nombre);
